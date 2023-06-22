@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+
+  <link href="./Einstein.png" rel="shortcut icon">
+  <title>자신의 이름</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link href="./mystyle.css" rel="stylesheet" type="text/css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style type="text/css">
+  .carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    padding: 0 20px;
+    margin-top: 200px;
+    float:left;
+    position: relative;
+    left: 25%;
+    padding:10px;
+    background-color: rgba( 255, 255, 255, 0.5 );
+  }
+  @media (max-width: 979px) {
+    .carousel-caption {
+      margin-top: 180px;
+      left: 20%;
+    }
+  }
+  @media (max-width: 767px) {
+    .carousel-caption {
+      margin-top: 120px;
+      left: 18%;
+    }
+  }
+  .pointer {cursor: pointer;}
+
+  /*--------------------------------------------------------------
+  # My Resume
+  --------------------------------------------------------------*/
+  .resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3b434a;
+  }
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #82909c;
+    position: relative;
+  }
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #E7B94A;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #eef0f2;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #82909c;
+  }
+
+  #footer {
+      height:30px;
+      text-align: center;
+      color: white;
+      background-color:#717171;
+      clear:both;
+  }
+
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130866535-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130866535-1');
+</script>
+
+</head>
+<body id="page-top">
+
+<nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href="#page-top" style="font-size: 2.2em; color: #f9ce99;">원종현</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a class="page-scroll" href="#introduction" style="font-size: 1.2em;">자기소개</a></li>
+        <li><a class="page-scroll" href="#background" style="font-size: 1.2em;">학력 및 프로젝트</a></li>
+        <li><a class="page-scroll" href="#certification" style="font-size: 1.2em;">자격증</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="contents">
+  <div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./main1.png" style="position: absolute; top: 20; bottom:0; left: 0; right:0; margin: auto;" alt="">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>자기소개</h1>
+            <p class="lead"><br></p>
+            <a class="btn btn-large btn-primary" href="#introduction">Details &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./main2.png" style="position: absolute; top: 0; bottom:50; left: 0; right:0; margin: auto;" alt="">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>학력 및 프로젝트</h1>
+            <p class="lead"><br></p>
+            <a class="btn btn-large btn-primary" href="#background">Details &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img class="teach_img" src="./main3.png" style="position: absolute; top: 0; bottom:0; left: 0; right:0; margin: auto;" alt="">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>자격증</h1>
+            <p class="lead"><br></p>
+            <a class="btn btn-large btn-primary" href="#certification">Details &raquo;</a>
+          </div>
+        </div>
+      </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div><!-- /.carousel -->
+  </div>
+  </div>
+
+<div class="container">
+
+  <h1 id="introduction">자기소개</h1><br/>
+
+  <div class="row">
+    <div class="col-sm-6" style="text-align: center;"><br><br><img src="./Einstein.png" class="img-circle" style="width:50%"><br><br></div>
+    <div class="col-sm-6">
+      <h1><a style="color:#7799AA; "></a>원종현</h1><br/><p>저는 <strong>역사학</strong>, <strong>컴퓨터 활용</strong>, 그리고 <strong>데이터 분석</strong>에 관심이 많으며 현재 아주대학교에 재학중입니다.</p>
+      <a href="https://github.com/">깃헙</a>,
+      <!-- <a href="https://www.modyco.fr/fr/component/jsn/seongmin.html?Itemid=">MoDyCo</a>,  -->
+      <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">네이버 블로그</a>
+      <!-- <a href="https://seongmin-mun.github.io/MyWebsite/CV/15062019/CV_SeongminMun_15062019.pdf">CV</a><br/> -->
+      <br/><span class="glyphicon glyphicon-phone"></span>
+      +82 (0)10 7603 2311<br/>
+      <br/><span class="glyphicon glyphicon-envelope"></span>
+      student@gmail.com<br/></p></div>
+  </div>
+  <br/><hr><br>
+
+  <h1 id="background">학력 및 배경</h1><br/>
+  <section id="resume" class="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="resume-item">
+            <h4>박사, <a href="https://www.ajou.ac.kr/en/" >아주대학교</a></h4>
+            <h5>시작일 ~ 종료일</h5>
+            <div class="row">
+            <div class="col-sm-7"><p><Strong>박사졸업논문</Strong></p>
+            <p><strong>제목:</strong> "데이터 분석에 대한 고찰"<br/><strong>저자:</strong> 자신의 이름<br/><strong>지도 교수:</strong> 지도 교수의 이름<br/><strong>심사일자:</strong> 일자<br/><strong>관련 링크:</strong><a href="https://www.ajou.ac.kr/en/"> github</a></p><br/></div>
+            <div class="col-sm-5" style="text-align: center;"><div class="jetpack-video-wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="iframevideo" style="width:100%; height:250px;" src="https://www.youtube.com/embed/F5awAtKPC8E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></span></div></div>
+            <!-- <div class="col-sm-7"><br/><br/><p><Strong>Ph.D. graduation thesis</Strong></p>
+            <p><strong>Title:</strong> "Polysemy resolution with word embedding models and data visualization: the case of adverbial postpositions <i>-ey</i>, <i>-eyse</i>, and <i>-(u)lo</i> in Korean"<br/><strong>Author:</strong> Seongmin Mun<br/><strong>Advisor:</strong> <a href="http://www.univ-paris8.fr/desagulier/home/">Guillaume Desagulier</a><br/><strong>Date of Conferment:</strong> 18.06.2021<br/><a href="https://seongmin-mun.github.io/MyWebsite/Seongmin/Resources/6.Thesis/PhD/manuscript/Page_titre_UPN_MUN.pdf">Cover</a>, <a href="https://seongmin-mun.github.io/MyWebsite/Seongmin/Resources/6.Thesis/PhD/manuscript/PhD_Dissertation_Manuscripts.pdf">Manuscript</a>, <a href="https://seongmin-mun.github.io/MyWebsite/Seongmin/Resources/6.Thesis/PhD/summary/Summary_Dissertation_french.pdf">Summary</a></p><br/></div>
+            <div class="col-sm-5" style="text-align: center;"><div class="jetpack-video-wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="iframevideo" style="width:100%; height:250px;" src="https://www.youtube.com/embed/F5awAtKPC8E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></span></div></div> -->
+          </div>
+          </div>
+
+          <div class="resume-item">
+            <h4>석사, <a href="https://www.ajou.ac.kr/en/" >아주대학교</a></h4>
+            <h5>시작일 ~ 종료일</h5>
+            <div class="row">
+            <div class="col-sm-7"><p><Strong>석사졸업논문</Strong></p>
+            <p><strong>제목:</strong> "데이터 분석 기초 방법론"<br/><strong>저자:</strong> 자신의 이름<br/><strong>지도 교수:</strong> 지도 교수의 이름<br/><strong>심사일자:</strong> 일자<br/><strong>관련 링크:</strong><a href="https://www.ajou.ac.kr/en/"> github</a></p><br/></div>
+            <div class="col-sm-5" style="text-align: center;"><div class="jetpack-video-wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="iframevideo" style="width:100%; height:250px;" src="https://www.youtube.com/embed/F5awAtKPC8E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></span></div></div>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <h4>학사, <a href="https://www.ajou.ac.kr/en/" >아주대학교</a></h4>
+            <h5>시작일 ~ 종료일</h5><br>
+            <!-- <p><Strong>Resources</Strong></p><p><a href="https://seongmin-mun.github.io/MyWebsite/Seongmin/Resources/6.Thesis/BS/BachelorOfScience.pdf">Diploma</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br/><hr><br/>
+
+  <h1 id="certification">자격증</h1><br/>
+  <div class="row">
+  <div class="col-sm-12">
+    <p><i>운전면허증</i> (경찰청 발행, 발행일자)</p>
+  <br><br><br></div></div>
+
+</div>
+
+<div id="footer" style="margin-bottom: 0px;">
+    <p id="footer">© Designed by <a id="footer_a" href="https://seongminmun.com/">Seongmin Mun</a>. All rights reserved.<p>
+</div>
+</body>
+</html>
